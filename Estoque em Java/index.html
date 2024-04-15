@@ -1,0 +1,51 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        $qtd = prompt("Quantas peças possui no estoque?")
+
+        if ($qtd < 50) {
+            document.write("<table border='1' width='800' align='center'>")
+            document.write("<tr bgcolor='sky blue' align='center'>")
+            document.write("<td width='200'><b>Peças em estoque</b></td>")
+            document.write("<td width='100'><b>Estado do estoque</b></td>")
+            document.write("<tr align='center'>")
+            document.write("<td>", $qtd, "</td>")
+            document.write("<td>Baixo</td>")
+            document.write("</table>")
+
+        }
+
+        else if ($qtd < 100) {
+            document.write("<table border='1' width='800' align='center'>")
+            document.write("<tr bgcolor='sky blue' align='center'>")
+            document.write("<td width='200'><b>Peças em estoque</b></td>")
+            document.write("<td width='100'><b>Estado do estoque</b></td>")
+            document.write("<tr align='center'>")
+            document.write("<td>", $qtd, "</td>")
+            document.write("<td>Normal</td>")
+            document.write("</table>")
+        }
+
+        else {
+            document.write("<table border='1' width='800' align='center'>")
+            document.write("<tr bgcolor='sky blue' align='center'>")
+            document.write("<td width='200'><b>Peças em estoque</b></td>")
+            document.write("<td width='100'><b>Estado do estoque</b></td>")
+            document.write("<tr align='center'>")
+            document.write("<td>", $qtd, "</td>")
+            document.write("<td>Alto</td>")
+            document.write("</table>")
+
+        }
+
+    </script>
+</head>
+<body>
+</body>
+</html>
