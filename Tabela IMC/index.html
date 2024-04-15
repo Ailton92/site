@@ -1,0 +1,82 @@
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        $altura = prompt("Qual sua altura [cm]")
+        $kg = prompt("Qual o seu peso [kg]?")
+
+        $imc = $kg / (($altura / 100) * ($altura / 100))
+        alert("Seu IMC é: " + $imc)
+
+        if ($imc < 18.5) {
+            document.write("<table border='1' width='800' align='center'>")
+            document.write("<tr bgcolor='sky blue' align='center'>")
+            document.write("<td><b>Peso</b></td>")
+            document.write("<td><b>Altura</b></td>")
+            document.write("<td><b>Classificação</b></td>")
+            document.write("<td><b>Representação</b></td>")
+            document.write("<tr align='center'>")
+            document.write("<td>", $kg, "kg", "</td>")
+            document.write("<td>", $altura, "cm", "</td>")
+            document.write("<td>Abaixo do peso</td>")
+            document.write("<td><img src='img/abaixo.png' width='30%'></td>")
+            document.write("</table>")
+
+        }
+        if ($imc > 18.4 && $imc < 25) {
+            document.write("<table border='1' width='800' align='center'>")
+            document.write("<tr bgcolor='sky blue' align='center'>")
+            document.write("<td><b>Peso</b></td>")
+            document.write("<td><b>Altura</b></td>")
+            document.write("<td><b>Classificação</b></td>")
+            document.write("<td><b>Representação</b></td>")
+            document.write("<tr align='center'>")
+            document.write("<td>", $kg, "kg", "</td>")
+            document.write("<td>", $altura, "cm", "</td>")
+            document.write("<td>Peso normal</td>")
+            document.write("<td><img src='img/normal.png' width='30%'></td>")
+            document.write("</table>")
+        }
+
+        if ($imc > 24.9 && $imc < 30) {
+            document.write("<table border='1' width='800' align='center'>")
+            document.write("<tr bgcolor='sky blue' align='center'>")
+            document.write("<td><b>Peso</b></td>")
+            document.write("<td><b>Altura</b></td>")
+            document.write("<td><b>Classificação</b></td>")
+            document.write("<td><b>Representação</b></td>")
+            document.write("<tr align='center'>")
+            document.write("<td>", $kg, "kg", "</td>")
+            document.write("<td>", $altura, "cm", "</td>")
+            document.write("<td>Acima do peso</td>")
+            document.write("<td><img src='img/acima.png' width='30%'></td>")
+            document.write("</table>")
+        }
+        if ($imc > 29.9) {
+            document.write("<table border='1' width='800' align='center'>")
+            document.write("<tr bgcolor='sky blue' align='center'>")
+            document.write("<td><b>Peso</b></td>")
+            document.write("<td><b>Altura</b></td>")
+            document.write("<td><b>Classificação</b></td>")
+            document.write("<td><b>Representação</b></td>")
+            document.write("<tr align='center'>")
+            document.write("<td>", $kg, "Kg", "</td>")
+            document.write("<td>", $altura, "cm", "</td>")
+            document.write("<td>Obesidade</td>")
+            document.write("<td><img src='img/obeso.png' width='30%'></td>")
+            document.write("</table>")
+        }
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
