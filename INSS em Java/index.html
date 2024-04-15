@@ -1,0 +1,93 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        $salario = prompt("Informe seu salário.")
+
+        if ($salario < 1100.01) {
+            $desconto = 0.075
+            $vlr_desconto = $salario * $desconto
+            $salario_desconto = $salario - $vlr_desconto
+
+            document.write("<table border='1' width='800' align='center'>")
+            document.write("<tr bgcolor='sky blue' align='center'>")
+            document.write("<td width='200'><b>Salário</b></td>")
+            document.write("<td width='100'><b>Porcentagem de desconto</b></td>")
+            document.write("<td><b>Valor Descontado</b></td>")
+            document.write("<td><b>Salário com desconto</b></td>")
+            document.write("<tr align='center'>")
+            document.write("<td>R$", $salario, "</td>")
+            document.write("<td>7.5%</td>")
+            document.write("<td>R$", $vlr_desconto, "</td>")
+            document.write("<td>R$", $salario_desconto, "</td>")
+            document.write("</table>")
+
+        }
+        else if ($salario < 2203.49) {
+            $desconto = 0.09
+            $vlr_desconto = $salario * $desconto
+            $salario_desconto = $salario - $vlr_desconto
+
+            document.write("<table border='1' width='800' align='center'>")
+            document.write("<tr bgcolor='sky blue' align='center'>")
+            document.write("<td width='200'><b>Salário</b></td>")
+            document.write("<td width='100'><b>Porcentagem de desconto</b></td>")
+            document.write("<td><b>Valor Descontado</b></td>")
+            document.write("<td><b>Salário com desconto</b></td>")
+            document.write("<tr align='center'>")
+            document.write("<td>R$", $salario, "</td>")
+            document.write("<td>9%</td>")
+            document.write("<td>R$", $vlr_desconto, "</td>")
+            document.write("<td>R$", $salario_desconto, "</td>")
+            document.write("</table>")
+
+        }
+
+        else if ($salario < 3305.23) {
+            $desconto = 0.12
+            $vlr_desconto = $salario * $desconto
+            $salario_desconto = $salario - $vlr_desconto
+
+            document.write("<table border='1' width='800' align='center'>")
+            document.write("<tr bgcolor='sky blue' align='center'>")
+            document.write("<td width='200'><b>Salário</b></td>")
+            document.write("<td width='100'><b>Porcentagem de desconto</b></td>")
+            document.write("<td><b>Valor Descontado</b></td>")
+            document.write("<td><b>Salário com desconto</b></td>")
+            document.write("<tr align='center'>")
+            document.write("<td>R$", $salario, "</td>")
+            document.write("<td>12%</td>")
+            document.write("<td>R$", $vlr_desconto, "</td>")
+            document.write("<td>R$", $salario_desconto, "</td>")
+            document.write("</table>")
+            }
+        else {
+            $desconto = 0.14
+            $vlr_desconto = $salario * $desconto
+            $salario_desconto = $salario - $vlr_desconto
+
+            document.write("<table border='1' width='800' align='center'>")
+            document.write("<tr bgcolor='sky blue' align='center'>")
+            document.write("<td width='200'><b>Salário</b></td>")
+            document.write("<td width='100'><b>Porcentagem de desconto</b></td>")
+            document.write("<td><b>Valor Descontado</b></td>")
+            document.write("<td><b>Salário com desconto</b></td>")
+            document.write("<tr align='center'>")
+            document.write("<td>R$", $salario, "</td>")
+            document.write("<td>14%</td>")
+            document.write("<td>R$", $vlr_desconto, "</td>")
+            document.write("<td>R$", $salario_desconto, "</td>")
+            document.write("</table>")
+
+        }
+
+    </script>
+</head>
+<body>
+</body>
+</html>
