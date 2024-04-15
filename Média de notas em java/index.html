@@ -1,0 +1,42 @@
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        $num1 = prompt("Qual o 1º número?")
+        $num2 = prompt("Qual o 2º número?")
+        $num3 = prompt("E o 3º?")
+
+        $media = (parseInt($num1) + parseInt($num2) + parseInt($num3)) / 3
+
+        document.write("<center>")
+        document.write("<font color='red' size='7'>")
+        document.write("Calculadora de média")
+        document.write("</font>")
+        document.write("<br>")
+        document.write("<br>")
+
+        document.write("<table border='1' width='800' align='center'>")
+        document.write("<tr bgcolor='sky blue' align='center'>")
+        document.write("<td><b>Número 1</b></td>")
+        document.write("<td><b>Número 2</b></td>")
+        document.write("<td><b>Número 3</b></td>")
+        document.write("<td><b>Média</b></td>")
+        document.write("<tr align='center'>")
+        document.write("<td>", $num1, "</td>")
+        document.write("<td>", $num2, "</td>")
+        document.write("<td>", $num3, "</td>")
+        document.write("<td>", $media, "</td>")
+        document.write("</table>")
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
