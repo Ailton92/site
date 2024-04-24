@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+
+        function oNomeQueEuQuiser() {
+
+            $nome = this.form2.fNome.value
+            $idade = this.form2.fIdade.value
+            $sexo = this.form2.fSexo.value
+            $curso = this.form2.fCurso.value
+            $turno = this.form2.fTurno.value
+            $professor1 = this.form2.fProfessor1.value
+            $professor2 = this.form2.fProfessor2.value
+            $disc = ""
+
+            if (this.form2.html.checked) {
+                $disc = $disc + "html, "
+            }
+            if (this.form2.javascript.checked) {
+                $disc = $disc + "javascript, "
+            }
+            if (this.form2.arduino.checked) {
+                $disc = $disc + "arduino, "
+            }
+            if (this.form2.logica.checked) {
+                $disc = $disc + "lógica, "
+            }
+            if (this.form2.gestalt.checked) {
+                $disc = $disc + "gestalt "
+            }
+            
+            document.write("<center><h1>Dados inseridos</h1></center><br><br>")
+            document.write("<b>Nome:</b> " + $nome + " /" + $idade + " anos<br><br>")
+            document.write("<b>Sexo:</b> " + $sexo+"<br><br>")
+            document.write("<b>Curso:</b> " + $curso + " <b>/Turno:</b> " + $turno+"<br><br>")
+            document.write("<b>Prof. 1:</b> " + $professor1 + " <b>/Prof. 2:</b> " + $professor2+"<br><br>")
+            document.write("<b>Disciplina(s) que mais gosta:</b> " + $disc+"<br><br>")
+            return false
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    <center>
+        <h1>Bem vindo(a)!</h1>
+    </center>
+    <h3><br><br></h3>
+    <form name="form2" method="post" action="" onsubmit="return oNomeQueEuQuiser()">
+        <b>Nome:</b> <input type="text" name="fNome"><br><br>
+        <b>Idade:</b> <input type="text" name="fIdade"><br><br>
+        <b>Sexo:</b>
+        Masculino<input type="radio" name="fSexo" value="Masculino">
+        Feminino<input type="radio" name="fSexo" value="Feminino">
+        <br><br>
+        <b>Curso:</b> <select name="fCurso">
+            <option value="DS">DS</option>
+            <option value="Mecânica">Mecânica</option>
+            <option value="Solda">Solda</option>
+        </select>
+        <b>Turno:</b> <select name="fTurno">
+            <option value="Manhã">Manhã</option>
+            <option value="Tarde">Tarde</option>
+            <option value="Noite">Noite</option>
+        </select>
+        <br><br>
+        <b>Professor 1:</b> <select name="fProfessor1">
+            <option value="Lucas Calu">Lucas Calu</option>
+            <option value="outro1">Outro</option>
+        </select>
+        <b>Professor 2:</b> <select name="fProfessor2">
+            <option value="Ricardo Corrêa">Ricardo Corrêa</option>
+            <option value="outro2">Outro</option>
+        </select>
+        <br><br>
+        <b>Disciplina que mais gosta:</b><br>
+        <input type="checkbox" name="html">HTML<br>
+        <input type="checkbox" name="javascript">JavaScript<br>
+        <input type="checkbox" name="arduino">Arduino<br>
+        <input type="checkbox" name="logica">Lógica<br>
+        <input type="checkbox" name="gestalt">Gestalt<br><br>
+
+        <input type="submit" value="GRAVAR">
+        <input type="reset" value="LIMPAR">
+
+    </form>
+    <br>
+    <a href="http://127.0.0.1:5500/index.html">Voltar para a tela de login</a>
+</body>
+
+</html>
